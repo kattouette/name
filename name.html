@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <title>New project</title>
 </head>
@@ -8,7 +9,7 @@
 <header>
   <div class="container">
     <h1>Kateryna</h1>
-    <a href="index.html">Menu</a>
+    <span>Menu</span>
     <nav>
       <ul>
         <li><a href="#about">About me</a></li>
@@ -23,7 +24,7 @@
   <h1 id="about">About me
   </h1>
   <h3>Hey, I'm Kate</h3>
-  <img src="photos/myphoto.jpg" alt="Karpova Kateryna" width="40%" height="40%"/>
+  <img class="mainPhoto" src="photos/myphoto.jpg" alt="Karpova Kateryna" height="40%"/>
   <p>I’m 27, and I love getting lost in a good series or spending quality time with my friends. Recently, I started
     learning frontend, exploring a space where creativity meets logic. I feel like I’m in a stage of growth, balancing
     the things I enjoy with building something new for my future.
@@ -40,15 +41,23 @@
   </ul>
   <h1 id="gallery">Gallery
   </h1>
-  <figure><img src="photos/DSCF0045.JPG" alt="Toronto" width="50%" height="50%"/>
+  <figure><img class="gallery" src="photos/DSCF0045.JPG" alt="Toronto"/>
     <figcaption>Toronto in winter</figcaption>
   </figure>
-  <figure><img src="photos/DSCF0048.JPG" alt="Niagara Falls" width="50%" height="50%"/>
+  <figure><img class="gallery" src="photos/DSCF0048.JPG" alt="Niagara Falls"/>
     <figcaption>Frozen Niagara</figcaption>
   </figure>
-  <figure><img src="photos/DSCF0084.JPG" alt="Niagara Falls" width="50%" height="50%"/>
+  <figure><img class="gallery" src="photos/DSCF0084.JPG" alt="Niagara Falls"/>
     <figcaption>Fairytale city</figcaption>
   </figure>
+  <section><h2>Contacts</h2>
+    <form>
+      <label>First name</label><input id="First name" type="text" placeholder="First name" required/>
+      <label>Email</label><input id="Email" type="email" placeholder="Email" required/>
+      <label>Info</label><textarea id="Info" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
 </main>
 <footer>
   <h1 id="contacts">Contacts
